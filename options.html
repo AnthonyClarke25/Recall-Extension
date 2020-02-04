@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Recal User settings</title>
+    <style>
+        body {
+            height: 700px;
+            width: 700px;
+            outline: bold;
+        }
+        
+        p {
+            font-size: 20px;
+        }
+    </style>
+
+    <script src="options.js"></script>
+</head>
+
+<body>
+    <h1>Please Select an Enviroment</h1>
+    <p>In order to use this extension you will need to get a pat token for the Enviroment you would like to connect to.</p>
+    <p></p>
+
+    <table>
+        <tr>
+            <label for="pat-token">Please enter your PAT token</label><br>
+            <input name="pat-token" id="pat-token">
+            <br><br>
+            <select id="enviroment"> </select>
+
+            <input type="submit" id="saveEnv" value="Save">
+            <input type="reset" id="clearenv" value="Clear Details">
+
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <label class="switch">
+            <input id="messageCheckbox" type="checkbox" value=0>
+            <span class="slider-round">Include Upcoming?</span>
+        </label>
+
+        </tr>
+    </table>
+
+    <h1>Recall User selection</h1>
+    <table>
+        <tr>
+            <select id="Usercode"> </select>
+            <input type="submit" id="saveUser" value="Save User">
+            <input type="reset" id="changeUser" value="Change User">
+            <input type="reset" id="clearUser" value="Clear User">
+        </tr>
+    </table>
+
+    <p>If you have already signed in once and save your enviorment details then please click change user twice and select a new user from the list.</p>
+
+
+</html>

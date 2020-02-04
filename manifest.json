@@ -1,0 +1,31 @@
+{
+    "name": "Recall List",
+    "version": "1.0",
+    "description": "An extension to show a users recall list",
+    "manifest_version": 2,
+    "permissions": [
+        "http://*/*",
+        "https://*/*",
+        "notifications",
+        "alarms",
+        "storage",
+        "tabs"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Recall List",
+        "default_icon": {
+            "16": "images/bell-16.png",
+            "48": "images/bell-48.png",
+            "128": "images/bell-128.png"
+        }
+    },
+    "options_page": "options.html",
+    "options_ui": {
+        "page": "options.html"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    }
+}
